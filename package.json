@@ -1,0 +1,10 @@
+{
+  "scripts": {
+    "build": "web-ext build -o --ignore-files yarn.lock",
+    "sign": "web-ext sign --ignore-files yarn.lock",
+    "start": "web-ext run"
+  },
+  "dependencies": {
+    "web-ext": "3.1.1"
+  }
+}

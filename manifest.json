@@ -1,0 +1,25 @@
+{
+    "manifest_version": 2,
+    "name": "Greekify",
+    "version": "1.0.0",
+    "description": "Convert all the letters on a page to their greek alphabet equivalent.",
+    "author": "Terry Schneider",
+    "browser_action": {
+        "browser_style": false,
+        "default_title": "Greekify"
+    },
+    "content_scripts": [
+        {
+            "matches": ["<all_urls>"],
+            "js": ["content-script.js"]
+        }
+    ],
+    "background": {
+        "scripts": [
+            "background.js"
+        ]
+    },
+    "permissions": [
+        "tabs"
+    ]
+}
